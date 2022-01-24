@@ -1,3 +1,3 @@
 # Github_Zerobase
 Group_4
-print("Hello World")
+Being Database Scientist
