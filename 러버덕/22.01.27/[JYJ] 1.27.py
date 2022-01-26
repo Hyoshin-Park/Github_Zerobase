@@ -16,3 +16,16 @@ num2 = (        )
 print(num1 + num2)      >     123456
 
 """
+
+
+
+
+
+
+
+
+
+
+
+
+정답  1. print("zero_base" * 10)    /     2. str(num1) , str(num2)
