@@ -1,0 +1,100 @@
+# 0128
+# for
+
+
+#35 : 사용자의 이름을 입력하라고 요청한 뒤, 그 이름을 세 번 출력
+name = input("입력 : ")
+for i in range(3):
+  print(name)
+
+
+
+#36 : 35번 프로그램을 수정하여
+name = input("이름 입력 : ")
+number = int(input("숫자 입력 : " ))
+for i in range(number):
+  print(name)
+
+
+#37 :
+name = input("이름 입력 : ")
+for i in name:
+  print(i)
+
+
+#38 : 37번 프로그램을 수정하여 숫자도 입력하도록 요청하자 이름의 각 문자를 한 줄에 하나씩 출력하는 작업을 입력한 숫자만큼 반복하라
+name = input("이름 입력 : ")
+number = int(input("숫자 입력 : " ))
+
+if len(name) > number:
+  for i in range(number):
+    print(name[i])
+else:
+  q = number // len(name)
+  
+  for i in range(q):
+    name += name
+
+  for i in range(number):
+    print(name[i])    
+  
+#39 : 구구단
+number = int(input("숫자 입력 : " ))
+for i in range(1,13):
+  print(number, " * ", i, "= ", number * i)
+
+
+#40 :
+number = int(input("숫자 입력 : " ))
+# range 마지막 숫자 포함X
+for i in range(50, number-1, -1):
+  print(i)
+
+
+#41 : 이름과 숫자를 입력하도록 요청한다 입력한 숫자가 10미만이면 입력한 숫자만큼 이름을 출력하고 10이상이면 "too high"를 세번 출력하라
+name = input("이름 입력 : ")
+number = int(input("숫자 입력 : " ))
+
+if number < 10:
+  for i in range(number):
+    print(name)
+else:
+  print("Too high")
+
+
+#42 :
+total = 0
+for i in range53):
+  number = input("숫자 입력 : " )
+  q = input("total + " + number + "  y/n : ")
+
+  if q == 'y':
+    total += int(number)
+
+print(total)
+
+
+#43 : 사용자에게 원하는 카운트 방향을 묻는다 만약 업을
+ud = input("up / down : " )
+
+if ud == 'up':
+  number = int(input("up number : "))
+  for i in range(1, number + 1):
+    print(i)
+elif ud == 'down':
+  number = int(input("down number : "))
+  for i in range(20, number-1, -1):
+    print(i)
+else:
+  print("i don't understand")
+
+
+
+#44
+number = int(input("입력 : " ))
+
+if number < 10:
+  name = input("이름 : ")
+  print(name + " 이미 초대됨")
+else:
+  print("너무 많아")
