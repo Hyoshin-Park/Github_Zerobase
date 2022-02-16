@@ -1,0 +1,11 @@
+def solution(nums):
+    answer = 0                  
+    new = list(set(nums))              # 중복된 포케못들 제거 후 서로 다른 폰켓몬 종류를 나열
+    choice = len(nums) // 2            # 선택하려는 포켓몬 수 
+    
+    if len(new) >= choice:              
+        answer = choice
+    else:
+        answer = len(new)
+    
+    return answer
